@@ -1,0 +1,38 @@
+/* Define the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 equal-width columns */
+    grid-template-rows: repeat(14, auto); /* 14 rows with automatic height */
+    gap: 10px; /* Space between grid items */
+    padding: 20px;
+  }
+  
+  /* Style for each grid item */
+  .grid-item {
+    border: 1px solid #ccc; /* Add a border for visualization */
+    border-radius: 8px; /* Slightly rounded corners */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Style for the image */
+  .grid-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 50%; /* Circular images */
+    border: 2px solid #ddd; /* Add a border for the image */
+  }
+  
+  /* Style for the text */
+  .grid-item p {
+    margin: 5px 0; /* Add space between text lines */
+    font-size: 14px;
+    text-align: center;
+  }
